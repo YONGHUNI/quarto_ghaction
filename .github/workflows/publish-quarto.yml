@@ -18,7 +18,7 @@ jobs:
           with:
             version: 1.3.340
         - name: Setup rmarkdown
-          run:  Rscript -e 'install.packages("rmarkdown")'
+          run:  Rscript -e 'install.packages("rmarkdown",lib="~/.")'
         - name: Publish to GitHub Pages (and render)
           uses: quarto-dev/quarto-actions/publish@v2
           with:
